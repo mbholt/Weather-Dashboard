@@ -1,0 +1,50 @@
+header {
+    background-image: linear-gradient(to right, lightblue, darkblue);
+    color: white;
+    font-size: 32pt;
+    text-align: center;
+  }
+  
+  #user-form {
+    margin: 3px;
+    padding: 3px;
+    border-bottom: solid 2px;
+  }
+  
+  #city-input {
+    margin: 3px;
+  }
+  
+  #weather {
+    border: solid 2px;
+    margin: 3px;
+  }
+  
+  #city-name {
+    font-weight: bold;
+    font-size: 18pt;
+  }
+  
+  #forecast {
+    margin: 3px;
+    padding: 3px;
+  }
+  
+  #days {
+    margin: 3px;
+    padding: 3px;
+  }
+  
+  #forecast h2 {
+    margin: 3px;
+    padding: 2px;
+    font-weight: bold;
+  }
+  
+  #day {
+    background-color: darkblue;
+    color: white;
+    margin: 3px;
+  }
+  
+  
