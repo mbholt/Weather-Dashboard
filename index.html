@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
+
+    <section>
+      <!---left column with search form and search history-->
+      <div class="container">
+        <div class="columns">
+          <div class="column is-one-quarter content">
+            <form id="user-form">
+              <input id="city-input" class="input is-info" type="text" placeholder="Enter city" />
+              <button id="submit" class="button is-info" type="submit">Get Weather</button>
+            </form>
+            <div class="box table-box">
+              <div class="table-container">
+                <table id="past-cities" class="table">
+                  <tr></tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!---right column with everything else-->
+          <div class="column">
+            <div class="row">
+              <!---top row with current weather-->
+              <div id="weather" class="column">
+                <div class="column">
+                  <h2 id="city-name"></h2>
+                  <h3 id="temp">Temp: </h3>
+                  <h3 id="wind">Wind: </h3>
+                  <h3 id="humidity">Humidity: </h3>
+                </div>
+                <div class="column">
+                  <div id="icon"></div>
+                </div>
+              </div>
+              <!---bottom row with 5 day forecast-->
+              <div id="forecast" class="row">
+                <div id="days">
+                  <h2>5-Day Forecast</h2>
+                </div>
+                  <div class="columns">
+                    <div id="day" class="column card">
+                      <div id="day1">
+                        <h2 id="date1"></h2>
+                        <h3 id="temp1">Temp: </h3>
+                        <h3 id="wind1">Wind: </h3>
+                        <h3 id="humidity1">Humidity: </h3>
+                      </div>
+                    </div>
+
+                    <div id="day" class="column card">
+                      <div id="day2">
+                        <h2 id="date2"></h2>
+                        <h3 id="temp2">Temp: </h3>
+                        <h3 id="wind2">Wind: </h3>
+                        <h3 id="humidity2">Humidity: </h3>
+                      </div>
+                    </div>
+
+                    <div id="day" class="column card">
+                      <div id="day3">
+                        <h2 id="date3"></h2>
+                        <h3 id="temp3">Temp: </h3>
+                        <h3 id="wind3">Wind: </h3>
+                        <h3 id="humidity3">Humidity: </h3>
+                      </div>
+                    </div>
+
+                    <div id="day" class="column card">
+                      <div id="day4">
+                        <h2 id="date4"></h2>
+                        <h3 id="temp4">Temp: </h3>
+                        <h3 id="wind4">Wind: </h3>
+                        <h3 id="humidity4">Humidity: </h3>
+                      </div>
+                    </div>
+
+                    <div id="day" class="column card">
+                      <div id="day5">
+                        <h2 id="date5"></h2>
+                        <h3 id="temp5">Temp: </h3>
+                        <h3 id="wind5">Wind: </h3>
+                        <h3 id="humidity5">Humidity: </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+
+</html>
